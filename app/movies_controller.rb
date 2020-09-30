@@ -33,7 +33,9 @@ def can_be_created_in_a_block(args = (title = "The Sting",
   # release_date == 1990
   
   Movie.create do |m|
-    __
+    args[:title]
+    
+    
   end
 end
 
